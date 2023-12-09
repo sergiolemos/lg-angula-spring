@@ -1,0 +1,11 @@
+[
+  { "_id": "1", "name": "Angular", "category": "front-end"},
+  { "_id": "2", "name": "Html", "category": "front-end"},
+  { "_id": "3", "name": "JavaScript", "category": "front-end"},
+  { "_id": "4", "name": "React", "category": "front-end"},
+  { "_id": "5", "name": "Vue", "category": "front-end"},
+  { "_id": "6", "name": "Material", "category": "design"},
+  { "_id": "7", "name": "Bootstrap", "category": "design"},
+  { "_id": "8", "name": "Tailwind", "category": "design"},
+  { "_id": "9", "name": "SASS", "category": "design"}
+]
