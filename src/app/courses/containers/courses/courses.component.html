@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-toolbar color="primary">
+    <span>Cursos Disponiveis</span>
+    <span class="example-spacer"></span>
+    <button mat-mini-fab extended color="secondary" aria-label="Adicionar Curso">
+      <mat-icon (click)="onAdd()">add</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <div class="mat-elevation-z8 column-flex">
+    <app-courses-list *ngIf="courses$ | async as courses; else loading" [courses]="courses"
+    (add)="onAdd()"
+    (edit)="onEdit($event)">
+
+    </app-courses-list>
+
+    <ng-template #loading>
+      <div class="loading-spinner">
+        <mat-spinner></mat-spinner>
+      </div>
+    </ng-template>
+  </div>
+</mat-card>
